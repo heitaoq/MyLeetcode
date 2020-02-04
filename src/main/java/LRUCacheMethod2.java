@@ -11,7 +11,6 @@ public class LRUCacheMethod2 {
             this.value=value;
         }
     }
-
     private Node head=new Node(),tail=new Node();
     private HashMap<Integer,Node> hashMap = new HashMap<Integer, Node>();
     int capacity,size;
@@ -25,9 +24,45 @@ public class LRUCacheMethod2 {
         node.next=null;
     }
     public void add(Node node){
-        Node pre=node.pre;
-        Node next=node.next;
-
-
+        Node tmp=head.next;
+        head.next=node;
+        node.pre=head;
+        node.next=tmp;
+        tmp.pre=node;
     }
+    LRUCacheMethod2(int capacity){
+        head.next=tail;
+        tail.pre=head;
+        this.capacity=capacity;
+        this.size=0;
+    }
+    public void put(int key,int value){
+        Node node=hashMap.get(key);
+        if(node!=null){
+            node.value=value;
+            del(node);
+            add(node);
+        }else{
+            if(size>=capacity){
+                Node delNode=tail.pre;
+                hashMap.remove(delNode.key);
+                del(delNode);
+                size--;
+            }
+            Node addNode=new Node(key,value);
+            add(addNode);
+            hashMap.put(key,addNode);
+            size++;
+        }
+
+        }
+
+    public int get(int key){
+        Node node = hashMap.get(key);
+        if(node==null) return -1;
+            del(node);
+            add(node);
+            return node.value;
+    }
+
 }

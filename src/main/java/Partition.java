@@ -12,15 +12,22 @@ public class Partition {
         }
     }
     public ListNode partition(ListNode head, int x) {
-    ListNode p,q=head;
-    while(q.val!=x){
-        q=q.next;
+    ListNode preHead1=new ListNode(0);
+    ListNode preHead2=new ListNode(0);
+    ListNode curHead1=preHead1;
+    ListNode curHead2=preHead2;
+    while(head!=null){
+        if(head.val<x){
+            curHead1.next=head;
+            curHead1=curHead1.next;
+        }else{
+            curHead2.next=head;
+            curHead2=curHead2.next;
+        }
+        head=head.next;
     }
-    while(q!=null){
-        if(q.val<x)
-    }
-    if(q.val<x){
-
-    }
+    curHead2.next=null;
+    curHead1.next=preHead2.next;
+    return preHead1.next;
     }
 }

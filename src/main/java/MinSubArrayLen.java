@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class MinSubArrayLen {
     public int minSubArrayLen(int s, int[] nums) {
         if(nums.length==0) return 0;
-        int i=0,j=0,result=Integer.MAX_VALUE,sum=0;
+        int i=0,j=0,result=nums.length,sum=0;
         while (j<=nums.length-1){
             sum=sum+nums[j];
             while(sum>=s){
@@ -21,7 +21,7 @@ public class MinSubArrayLen {
             }
             j++;
         }
-        if(result==Integer.MAX_VALUE) return 0;
+        if(result==nums.length) return 0;
         return result;
     }
 }

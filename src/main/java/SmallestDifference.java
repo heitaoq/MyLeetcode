@@ -26,4 +26,18 @@ public class SmallestDifference {
         }
         return (int)res;
     }
+    public void quckSort(int[] a,int start,int end){
+        int i=start;
+        int j=a.length-1;
+        int tmp=a[start];
+        while(i<j) {
+            while (j > i && a[j] > tmp) j--;
+            a[0] = a[j];
+            while (i < j && a[i] < tmp) i++;
+            a[j] = a[i];
+        }
+        a[i]=tmp;
+        quckSort(a,start,i-1);
+        quckSort(a,i+1,end);
+    }
 }

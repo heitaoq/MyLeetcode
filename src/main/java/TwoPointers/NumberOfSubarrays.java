@@ -1,3 +1,5 @@
+package TwoPointers;
+
 import java.util.HashMap;
 /*给你一个整数数组 nums 和一个整数 k。
         如果某个 连续 子数组中恰好有 k 个奇数数字，我们就认为这个子数组是「优美子数组」。

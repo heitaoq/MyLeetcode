@@ -1,4 +1,4 @@
-//https://www.cnblogs.com/ysw-go/p/11416950.html
+package TwoPointers;//https://www.cnblogs.com/ysw-go/p/11416950.html
 
 public class FindMedianSortedArrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {

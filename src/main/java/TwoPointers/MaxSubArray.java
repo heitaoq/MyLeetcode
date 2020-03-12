@@ -1,3 +1,5 @@
+package TwoPointers;
+
 public class MaxSubArray {
     public int maxSubArray(int[] nums) {
     int sum=nums[0];

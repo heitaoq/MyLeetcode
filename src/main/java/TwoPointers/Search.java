@@ -1,3 +1,5 @@
+package TwoPointers;
+
 //搜索旋转排序数组
 public class Search {
     public static int search(int[] nums, int target) {

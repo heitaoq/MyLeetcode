@@ -1,3 +1,5 @@
+import TwoPointers.BalancedString;
+
 //数组中元素的值代表位置
 //map中的key
 public class Main {
@@ -8,5 +10,4 @@ public class Main {
         BalancedString balancedString=new BalancedString();
        System.out.printf(""+balancedString.balancedString(str));
     }
-
 }

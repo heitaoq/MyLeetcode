@@ -20,6 +20,6 @@ public class ReverseList {
             p=q;
             q=tmp;
         }
-       return p; 
+       return p;
     }
 }

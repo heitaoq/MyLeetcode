@@ -1,4 +1,4 @@
-package easy;
+package offer;
 /*面试题22
 链表中倒数第k个节点   */
 import common.ListNode;

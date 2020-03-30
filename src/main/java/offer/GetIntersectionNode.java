@@ -1,4 +1,4 @@
-package easy;
+package offer;
 /*
 输入两个链表，找出它们的第一个公共节点。
 如下面的两个链表：

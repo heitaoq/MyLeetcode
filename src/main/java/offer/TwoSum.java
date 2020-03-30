@@ -1,4 +1,4 @@
-package easy;
+package offer;
 
 public class TwoSum {
     public double[] twoSum(int n) {

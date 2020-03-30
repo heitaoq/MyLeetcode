@@ -1,4 +1,4 @@
-package easy;
+package offer;
 /*
 输入: [1, 2, 3, 2, 2, 2, 5, 4, 2]
 输出: 2

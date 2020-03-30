@@ -1,6 +1,4 @@
-package easy;
-
-import java.util.List;
+package offer;
 
 public class ReverseList {
     public class ListNode {

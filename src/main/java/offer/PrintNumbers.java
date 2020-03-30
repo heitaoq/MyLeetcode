@@ -1,4 +1,4 @@
-package easy;
+package offer;
 
 public class PrintNumbers {
     public int[] printNumbers(int n) {

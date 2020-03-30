@@ -1,10 +1,8 @@
-package easy;
+package offer;
 
 import common.ListNode;
 
 import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
 /*面试题06. 从尾到头打印链表*/
 
 public class ReversePrint {

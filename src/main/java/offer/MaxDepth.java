@@ -1,4 +1,4 @@
-package easy;
+package offer;
 import common.TreeNode;
 /*面试题55 - I. 二叉树的深度*/
 

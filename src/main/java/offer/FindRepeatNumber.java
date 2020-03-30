@@ -1,4 +1,4 @@
-package easy;
+package offer;
 /*找出数组中重复的数字。
 
 在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。
@@ -8,7 +8,6 @@ package easy;
 [2, 3, 1, 0, 2, 5, 3]
 输出：2 或 3
 */
-import java.util.Arrays;
 
 public class FindRepeatNumber {
     public int findRepeatNumber(int[] nums) {

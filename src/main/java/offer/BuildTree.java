@@ -1,4 +1,4 @@
-package Media;
+package offer;
 
 import java.util.HashMap;
 
